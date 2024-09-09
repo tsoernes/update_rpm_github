@@ -79,7 +79,8 @@ if len(installed_versions) == 1:
         if reinstall:
             install = True
         else:
-            install =False
+            print(f"Version {installed_version} already installed; not installing.")
+            install = False
     else:
         print(f"Installed version {installed_version} newer than downloaded version {rpm_version}; not installing.")
 
