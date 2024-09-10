@@ -51,6 +51,7 @@ try:
 except Exception as e:
     print(e)
     print("Invalid owner + repo: ", args.repo)
+    sys.exit(1)
 
 file_selector = args.file_selector
 redownload = args.redownload
